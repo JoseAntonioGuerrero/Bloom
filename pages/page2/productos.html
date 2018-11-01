@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bloom</title>
+    <link rel="stylesheet" href="../../css/productos.css">
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <div id="page">
+        <header class="wrapper">
+            <a id="link-home"><img id="header-logo" src="../../img/logo png bloom-01-01.png" alt="Alta logo"></a>
+            <img id="menu-mobile-icon" src="../../img/menu-icon.svg" alt="Open Menu">
+            <div id="menu-wrapper">
+                <a id="menu-close"></a>
+                <div id="menu-mobile">
+                    <div id="menu-container">
+                        <ul id="menu">
+                            <li class="menu-item">
+                                <!-- Links are handled with script after animation occurs-->
+                                <a class="menu-link" id="link1">VISIÓN</a>
+                            </li>
+                            <li class="menu-item">
+                                <a class="menu-link" id="link2">PRODUCTOS</a>
+                                <div id="ind-container">
+                                    <div id="indicator"></div>
+                                </div>
+                            </li>
+                            <li class="menu-item">
+                                <a class="menu-link" id="link3">ALIADOS</a>
+                            </li>
+                            <li class="menu-item">
+                                <a class="menu-link" id="link4">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- ************************************ Section 1 ************************************************-->
+        <!-- this section contains cards of products-->
+        <section class="products1" id="section1">
+            <div class="col1">
+                <article class="card">
+                    <div>
+                        <!--set "max-height" in all cards according to requirements-->
+                        <!--All should have same "max-height" value to display css grid correctly-->
+                        <img src="../../img/untitled1-2-group.png" alt="Nuestros productos" style="max-height:234px">
+                    </div>
+                    <h2 class="card-title">Audífonos</h2>
+                </article>
+                <article class="card">
+                    <div>
+                        <img src="../../img/untitled1-2-group.png" alt="Nuestros productos" style="max-height:234px">
+                    </div>
+                    <h2 class="card-title">Cables</h2>
+                </article>
+            </div>
+            <div class="col2">
+                <article class="card">
+                    <div>
+                        <img src="../../img/untitled.673.png" alt="Nuestros productos" style="max-height:234px">
+                    </div>
+                    <h2 class="card-title">Power Banks</h2>
+                </article>
+                <article class="card">
+                    <div>
+                        <img src="../../img/untitled.19.png" alt="Nuestros productos" style="max-height:234px">
+                    </div>
+                    <h2 class="card-title">Adaptadores</h2>
+                </article>
+            </div>
+        </section>
+        <!-- ************************************ Section 2 ************************************************-->
+        <!-- This section contains a carousel-->
+        <section class="products2">
+            <!--Add card to class's article below-->
+            <article class="carous">
+                <!--Carousel Here-->
+            </article>
+        </section>
+        <!-- ************************************Footer ****************************************************-->
+        <footer id="footer">
+            <div id="social-container">
+                <article class="social">
+                    <a href="#"><img src="../../img/Group36.png" alt="Facebook" class="social-img"></a>
+                    <a href="#"><img src="../../img/Group38.png" alt="Instagram" class="social-img"></a>
+                    <a href="#"><img src="../../img/Group40.png" alt="Twitter" class="social-img"></a>
+                </article>
+                <p class="footer-text">2018 KAIZEN WEB & DESIGN</p>
+            </div>
+            <article class="subscribe">
+                <form action="./*">
+                    <label for="email"></label>
+                    <input type="email" placeholder="EMAIL" class="email">
+                    <button class="btn-white">
+                        <p class="btn-txt">SUSCRÍBETE</p>
+                    </button>
+                </form>
+            </article>
+        </footer>
+    </div>
+    <script src="../../index.js"></script>
+</body>
+
+</html>
