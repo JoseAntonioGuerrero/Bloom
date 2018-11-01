@@ -23,19 +23,35 @@
   //Notice that at this point urls are expressed in terms of a dev host.
   link1.addEventListener(
     "click",
-    linkHandler("http://127.0.0.1:5500/pages/page1/vision.html", true, 1300)
+    linkHandler(
+      "file:///Users/joseguerrero/Downloads/Bloom%20&%20Alta/Bloom-master/pages/page1/vision.html",
+      true,
+      1300
+    )
   );
   link2.addEventListener(
     "click",
-    linkHandler("http://127.0.0.1:5500/pages/page2/productos.html", true, 1300)
+    linkHandler(
+      "file:///Users/joseguerrero/Downloads/Bloom%20&%20Alta/Bloom-master/pages/page2/productos.html",
+      true,
+      1300
+    )
   );
   link3.addEventListener(
     "click",
-    linkHandler("http://127.0.0.1:5500/pages/page3/aliados.html", true, 1300)
+    linkHandler(
+      "file:///Users/joseguerrero/Downloads/Bloom%20&%20Alta/Bloom-master/pages/page3/aliados.html",
+      true,
+      1300
+    )
   );
   link4.addEventListener(
     "click",
-    linkHandler("http://127.0.0.1:5500/pages/page4/contacto.html", true, 1300)
+    linkHandler(
+      "file:///Users/joseguerrero/Downloads/Bloom%20&%20Alta/Bloom-master/pages/page4/contacto.html",
+      true,
+      1300
+    )
   );
 
   if (linkHome)
@@ -142,8 +158,6 @@
   }
 })();
 
-
 for (let i = 0; i < array.length; i++) {
   const element = array[i];
-  
 }

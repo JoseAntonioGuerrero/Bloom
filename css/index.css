@@ -119,7 +119,9 @@ a.menu-link {
   border-bottom: 1px solid #6b6e73;
   text-decoration: none;
   letter-spacing: 2px;
+  cursor: pointer;
 }
+
 #section1 {
   opacity: 1;
   position: absolute;
@@ -193,11 +195,11 @@ a.menu-link {
     border: none;
     font-weight: bold;
   }
-  #section1{
-  margin-top: 30px;
-  position: unset;
-  top: unset;
-  right: unset;
+  #section1 {
+    margin-top: 30px;
+    position: unset;
+    top: unset;
+    right: unset;
   }
   /******* *1 *********/
 }
