@@ -153,8 +153,7 @@ a.menu-link {
   align-items: center;
   flex-direction: column;
 }
-#col1 > .square-container {
-}
+
 .square-container {
   border-radius: 0.02%;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
