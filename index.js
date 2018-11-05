@@ -18,13 +18,12 @@
   var sectionTitle = document.querySelector("#section-title");
   menuOpener.addEventListener("click", openMenu);
   menuCloser.addEventListener("click", closeMenu);
-  console.log(section1);
   //Change urls according to your needs.
   //Notice that at this point urls are expressed in terms of a dev host.
   link1.addEventListener(
     "click",
     linkHandler(
-      "file:///Users/joseguerrero/Downloads/Bloom%20&%20Alta/Bloom-master/pages/page1/vision.html",
+      "http://127.0.0.1:5500/vision.html",
       true,
       1300
     )
@@ -32,7 +31,7 @@
   link2.addEventListener(
     "click",
     linkHandler(
-      "file:///Users/joseguerrero/Downloads/Bloom%20&%20Alta/Bloom-master/pages/page2/productos.html",
+      "http://127.0.0.1:5500/productos.html",
       true,
       1300
     )
@@ -40,7 +39,7 @@
   link3.addEventListener(
     "click",
     linkHandler(
-      "file:///Users/joseguerrero/Downloads/Bloom%20&%20Alta/Bloom-master/pages/page3/aliados.html",
+      "http://127.0.0.1:5500/aliados.html",
       true,
       1300
     )
@@ -48,7 +47,7 @@
   link4.addEventListener(
     "click",
     linkHandler(
-      "file:///Users/joseguerrero/Downloads/Bloom%20&%20Alta/Bloom-master/pages/page4/contacto.html",
+      "http://127.0.0.1:5500/contacto.html",
       true,
       1300
     )
@@ -57,7 +56,7 @@
   if (linkHome)
     linkHome.addEventListener(
       "click",
-      linkHandler("../../index.html", false, 1300)
+      linkHandler("./index.html", false, 1300)
     );
   /**
    * Animations Below

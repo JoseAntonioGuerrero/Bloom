@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto Light", arial;
 }
 a {
   color: inherit;
@@ -38,7 +38,12 @@ html {
 }
 
 header #indicator {
-  display: none;
+  display: block;
+  margin: 0.5px;
+  height: 3px;
+  width: 75%;
+  background: rgb(64, 122, 189);
+  margin-right: 2px;  
 }
 
 /*main logo*/
@@ -276,6 +281,12 @@ input {
   #menu-container {
     display: block;
   }
+  header #ind-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
 
   ul#menu {
     display: -webkit-flex;
@@ -292,7 +303,7 @@ input {
     display: block;
     text-align: center;
     font-size: 0.7em;
-    padding: 15px 12px 4px 12px;
+    padding: 18px 12px 2px 12px;
     text-decoration: none;
     letter-spacing: 2px;
     border: none;
@@ -313,6 +324,10 @@ input {
     margin: 30px 5px 1px;
     display: grid;
     grid-template-columns: auto auto;
+  }
+
+  a > article {
+    height: 100%;
   }
 
   .col1 {
