@@ -1,4 +1,5 @@
 (function App() {
+  var urlBase = "http://127.0.0.1:5500/";
   var mobileMenu = document.querySelector("#menu-wrapper");
   var menuOpener = document.querySelector("#menu-mobile-icon");
   var menuCloser = document.querySelector("#menu-close");
@@ -16,6 +17,9 @@
   var bg = document.querySelector(".bg"); //in case you want to add animation to the background.
   var page = document.querySelector("#page");
   var sectionTitle = document.querySelector("#section-title");
+
+  var adapterImages = document.querySelectorAll('.product-img-container>img');
+
   menuOpener.addEventListener("click", openMenu);
   menuCloser.addEventListener("click", closeMenu);
   //Change urls according to your needs.
@@ -23,7 +27,7 @@
   link1.addEventListener(
     "click",
     linkHandler(
-      "http://127.0.0.1:5500/vision.html",
+      urlBase + "vision.html",
       true,
       1300
     )
@@ -31,7 +35,7 @@
   link2.addEventListener(
     "click",
     linkHandler(
-      "http://127.0.0.1:5500/productos.html",
+      urlBase + "productos.html",
       true,
       1300
     )
@@ -39,7 +43,7 @@
   link3.addEventListener(
     "click",
     linkHandler(
-      "http://127.0.0.1:5500/aliados.html",
+      urlBase + "aliados.html",
       true,
       1300
     )
@@ -47,16 +51,66 @@
   link4.addEventListener(
     "click",
     linkHandler(
-      "http://127.0.0.1:5500/contacto.html",
+      urlBase + "contacto.html",
       true,
       1300
     )
   );
 
+  for (var i = 0; i < adapterImages.length; i++) {
+    adapterImages[i].index = i;
+    adapterImages[i].addEventListener("mouseover", function(event) {
+      changeImageOnHover(event);
+    });
+    adapterImages[i].addEventListener("mouseout", function(event) {
+      changeImageOnMouseOut(event);
+    });
+  }
+
+  function changeImageOnHover(event) {
+    event.target.style.opacity = 0;
+    setTimeout(function() {
+      switch (event.target.index) {
+        case 0:
+          event.target.src = "../img/Rectangle 61.png";
+          break;
+        case 1:
+          event.target.src = "../img/Rectangle 61.png";
+          break;
+        case 2:
+          event.target.src = "../img/Rectangle 65.png";
+          break;
+        case 3:
+          event.target.src = "../img/Rectangle 65.png";
+      }
+      event.target.style.opacity = 1;
+    }, 300); // Linked to css transition time
+  }
+
+  function changeImageOnMouseOut(event) {
+    event.target.style.opacity = 0;
+    setTimeout(function() {
+      switch (event.target.index) {
+        case 0:
+          event.target.src = "../img/untitled.23.png";
+          break;
+        case 1:
+          event.target.src = "../img/untitled.26.png";
+          break;
+        case 2:
+          event.target.src = "../img/U1.642.png";
+          break;
+        case 3:
+          event.target.src = "../img/2.651.png";
+      }
+      event.target.style.opacity = 1;
+    }, 300);
+  }
+
   if (linkHome)
     linkHome.addEventListener(
       "click",
-      linkHandler("./index.html", false, 1300)
+      linkHandler(urlBase + "index.html", false, 1300)
     );
   /**
    * Animations Below
