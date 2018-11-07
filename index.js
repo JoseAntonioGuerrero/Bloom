@@ -58,7 +58,7 @@
   );
 
   for (var i = 0; i < adapterImages.length; i++) {
-    adapterImages[i].index = i;
+    adapterImages[i].index = i; // Add an index to property to uniquely identify each element later
     adapterImages[i].addEventListener("mouseover", function(event) {
       changeImageOnHover(event);
     });
@@ -104,7 +104,7 @@
           event.target.src = "../img/2.651.png";
       }
       event.target.style.opacity = 1;
-    }, 300);
+    }, 300); // Linked to css transition time
   }
 
   if (linkHome)

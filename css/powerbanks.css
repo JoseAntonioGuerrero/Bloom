@@ -149,7 +149,7 @@
   /************************************************/
   /************************************************/
   .tittle {
-    width: 110px;
+    width: 150px;
     padding-top: 10px;
   }
   #section1-new {
@@ -157,11 +157,9 @@
     display: -moz-box;
     display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    align-items: stretch;
-    padding: 0 10%;
+    width: 90%;
+    justify-content: center;
+    margin-left: 10%;
   }
   .sq1-new {
     flex: 0 0 20%;
@@ -193,12 +191,14 @@
   }
   .div_tittle_down {
     width: 20%;
+    margin: 5vw;
   }
   .tittle_down {
     width: 100%;
   }
   .div_tittle_down_2 {
     width: 50%;
+    margin-bottom:5%;
   }
   /************************************************/
   /************************************************/
