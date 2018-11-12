@@ -133,6 +133,7 @@ a {
 .product-card {
   flex: 1 0 0%;
   display: flex;
+  margin-bottom: 50px;
 }
 
 [class*="detail-container"] {
@@ -179,7 +180,7 @@ a {
 }
 
 .bottom {
-  margin-bottom: 120px;
+  margin-bottom: 70px;
 }
 
 /************************************************/
