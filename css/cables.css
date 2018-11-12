@@ -140,11 +140,11 @@ a {
 }
 
 .detail-container1>img {
-  width: 3.5vw;
+  width: 8vw;
 }
 
 .detail-container2>img {
-  width: 5.8vw;
+  width: 8vw;
 }
 
 .color-container>img {
@@ -176,7 +176,10 @@ a {
 .product-card {
   display: flex;
   justify-content: center;
-  margin: 25px 0;
+}
+
+.bottom {
+  margin-bottom: 120px;
 }
 
 /************************************************/
@@ -188,7 +191,7 @@ a {
 /************************************************/
 .tittle {
   width: 90px;
-  margin: 20px;
+  margin: 40px;
 }
 
 .subtitle {

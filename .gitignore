@@ -1,5 +1,5 @@
 mockups/
-.firebase/
-/productos/aux/
+productos/aux/
+*.firebase
 *.firebaserc
 *firebase.json
