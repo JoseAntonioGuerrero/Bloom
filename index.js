@@ -12,6 +12,8 @@
   var linkHome = document.querySelector("#link-home");
   var textAuxContainer = document.querySelector("#text-aux-container");
   var section1 = document.querySelector("#section1");
+  var section1new = document.querySelector("#section1-new");
+  var vanishClass = document.querySelectorAll(".vanish");
   var menuIndicator = document.querySelector("#indicator");
   var footer = document.querySelector("#footer");
   var bg = document.querySelector(".bg"); //in case you want to add animation to the background.
@@ -151,6 +153,18 @@
     if (section1) section1.style.transition = "0.3s";
     if (section1) section1.style.opacity = "0";
 
+    if (section1new) {
+      section1new.style.transition = "0.3s";
+      section1new.style.opacity = "0";
+    }
+
+    if (vanishClass) {
+      for (var i = 0; i < vanishClass.length; i++) {
+        vanishClass[i].style.transition = "0.3s";
+        vanishClass[i].style.opacity = "0";
+      }
+    }
+
     if (sectionTitle) sectionTitle.style.transition = "0.3s";
     if (sectionTitle) sectionTitle.style.opacity = "0";
 
@@ -163,12 +177,20 @@
     setTimeout(() => {
       if (textAuxContainer) textAuxContainer.style.transition = "none";
       section1.style.transition = "none";
+      section1new.style.transition = "none";
+      for (var i = 0; i < vanishClass.length; i++) {
+        vanishClass[i].style.transition = "none";
+      }
       menuIndicator.style.transition = "none";
       footer.style.transition = "none";
       if (sectionTitle) sectionTitle.transition = "none";
 
       if (textAuxContainer) textAuxContainer.style.visibility = "hidden";
       section1.style.visibility = "hidden";
+      section1new.style.visibility = "hidden";
+      for (var i = 0; i < vanishClass.length; i++) {
+        vanishClass[i].style.visibility = "hidden";
+      }
       menuIndicator.style.visibility = "hidden";
       footer.style.visibility = "hidden";
       if (sectionTitle) sectionTitle.transition = "hidden";
@@ -210,7 +232,3 @@
     return home ? goToLinkFromHome : goToHome;
   }
 })();
-
-for (let i = 0; i < array.length; i++) {
-  const element = array[i];
-}

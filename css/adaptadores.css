@@ -11,7 +11,6 @@ body {
   margin: 0;
 }
 
-/**********************/
 #page {
   padding-top: 30px;
   display: -webkit-flex;
@@ -25,7 +24,6 @@ body {
   height: 100%;
 }
 
-/***** { Header }******/
 .wrapper {
   display: -webkit-flex;
   display: -moz-box;
@@ -37,71 +35,13 @@ body {
   transition: 1.2s;
 }
 
-/*main logo*/
 #header-logo {
   max-width: 330px;
 }
-/*Menu icon*/
+
 #menu-mobile-icon {
   display: none;
 }
-/*** {Menu Below} ***/
-#menu-wrapper {
-  display: block;
-  background: rgba(85, 89, 94, 0.97);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  /*transition: 0.4s;*/
-  /*Change this to 0 to hide menu*/
-  visibility: hidden;
-  opacity: 0;
-}
-/*X to close menu*/
-#menu-close {
-  position: relative;
-  height: 21px;
-  width: 21px;
-  margin: 30px auto 0 auto;
-  background: url(../img/x-close.png) center center no-repeat;
-  background-size: 21px 21px;
-  color: #fff;
-  display: block;
-  cursor: pointer;
-  z-index: 25;
-}
-/*Table system to center menu list*/
-/*For this is needed a display table and a display table cell*/
-#menu-mobile {
-  display: table;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  z-index: 20;
-}
-#menu-container {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-ul#menu {
-  padding: 0;
-  margin: 0;
-  border-top: 1px solid #6b6e73;
-}
-li.menu-item {
-  display: list-item;
-  list-style: disc;
-}
-
-/*New Code*/
-/************************************************/
-/************************************************/
-/************************************************/
 
 .section-container {
   display: flex;
@@ -158,13 +98,11 @@ li.menu-item {
   margin-top: 1vw;
 }
 
-/************************************************/
 .tittle {
   width: 150px;
   margin: 20px;
 }
 
-/* {Footer} */
 footer {
   background: rgb(91, 104, 112);
   display: -webkit-flex;
@@ -251,11 +189,14 @@ header #indicator {
   background: rgb(64, 122, 189);
   margin-right: 2px;
 }
-#menu-mobile-icon {
-  display: none;
-}
-/*display menu *1 */
+
 #menu-wrapper {
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
   visibility: visible !important;
   opacity: 1 !important;
   background: transparent;
@@ -265,22 +206,31 @@ header #indicator {
   display: none;
 }
 #menu-mobile {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: 20;
   display: block;
   position: relative;
 }
 #menu-container {
   display: block;
 }
-ul#menu {
+
+ul#menu { 
   display: -webkit-flex;
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
   border: none;
+  padding: 0;
+  margin: 0;
 }
+
 li.menu-item {
   display: unset;
 }
+
 a.menu-link {
   cursor: pointer;
   color: rgb(64, 122, 189);
@@ -293,6 +243,7 @@ a.menu-link {
   border: none;
   font-weight: bold;
 }
+
 a {
   cursor: pointer;
 }
