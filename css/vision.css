@@ -1,3 +1,4 @@
+/*
 *,
 *:before,
 *:after {
@@ -9,7 +10,7 @@ body {
   margin: 0;
 }
 
-/*Background setting*/
+/*Background setting
 img.bg {
   min-height: 100%;
   min-width: 1100px;
@@ -20,7 +21,7 @@ img.bg {
   left: 0;
   z-index: -1;
 }
-/**********************/
+/**********************
 #page {
   padding-top: 30px;
   display: -webkit-flex;
@@ -34,7 +35,7 @@ img.bg {
   height: 100%;
 }
 
-/***** { Header }******/
+/***** { Header }******
 .wrapper {
   display: -webkit-flex;
   display: -moz-box;
@@ -50,18 +51,18 @@ header #indicator {
   display: none;
 }
 
-/*main logo*/
+/*main logo
 #header-logo {
   max-width: 250px;
 }
-/*Menu icon*/
+/*Menu icon*
 #menu-mobile-icon {
   margin-top: 15px;
   margin-bottom: 20px;
   max-width: 35px;
   cursor: pointer;
 }
-/*** {Menu Below} ***/
+/*** {Menu Below} ***
 #menu-wrapper {
   display: block;
   background: rgba(85, 89, 94, 0.97);
@@ -71,12 +72,12 @@ header #indicator {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  /*transition: 0.4s;*/
-  /*Change this to 0 to hide menu*/
+  /*transition: 0.4s;*
+  /*Change this to 0 to hide menu*
   visibility: hidden;
   opacity: 0;
 }
-/*X to close menu*/
+/*X to close menu*
 #menu-close {
   position: relative;
   height: 21px;
@@ -89,8 +90,8 @@ header #indicator {
   cursor: pointer;
   z-index: 25;
 }
-/*Table system to center menu list*/
-/*For this is needed a display table and a display table cell*/
+/*Table system to center menu list*
+/*For this is needed a display table and a display table cell*
 #menu-mobile {
   display: table;
   height: 100%;
@@ -124,7 +125,7 @@ a.menu-link {
   letter-spacing: 2px;
   cursor: pointer;
 }
-/*********************/
+/*********************
 #section1 {
   display: -webkit-flex;
   display: -moz-box;
@@ -152,13 +153,13 @@ h1 {
 #location-img {
   width: 90%;
 }
-/*Texts*/
+/*Texts*
 .text {
   text-align: center;
   padding: 0 10px 0 10px;
   letter-spacing: 1.5px;
 }
-/* {Footer} */
+/* {Footer} *
 
 footer {
   background: rgb(91, 104, 112);
@@ -232,15 +233,15 @@ input {
 
 /****************/
 
-/*Small devices (landscape phones, 576px and up)*/
+/*Small devices (landscape phones, 576px and up)*
 @media (min-width: 553px) {
-  /*Hide menu-mobile-icon*/
+  /*Hide menu-mobile-icon*
   input {
     width: 135px;
   }
 }
 
-/*Medium devices (tablets, 768px and up)*/
+/*Medium devices (tablets, 768px and up)*
 @media (min-width: 768px) {
   .wrapper {
     margin-bottom: 0px;
@@ -259,7 +260,7 @@ input {
     background: rgb(64, 122, 189);
     margin-right: 2px;
   }
-  /*main logo*/
+  /*main logo*
   #header-logo {
     max-width: 330px;
   }
@@ -267,7 +268,7 @@ input {
   #menu-mobile-icon {
     display: none;
   }
-  /*display menu *1 */
+  /*display menu *1 *
   #menu-wrapper {
     visibility: visible !important;
     opacity: 1 !important;
@@ -313,7 +314,7 @@ input {
   h1 {
     text-align: center;
   }
-  /******* *1 *********/
+  /******* *1 *********
   #section1 {
     display: -webkit-flex;
     display: -moz-box;
@@ -367,7 +368,7 @@ input {
     letter-spacing: 2px;
   }
   
-  /***** {Footer} *****/
+  /***** {Footer} *****
   footer {
     position: relative;
     min-height: 80px;
@@ -380,17 +381,17 @@ input {
   }
 }
 
-/*Large devices (desktops, 992px and up)*/
+/*Large devices (desktops, 992px and up)*
 @media (min-width: 992px) {
   input {
     width: 200px;
   }
 }
-/*4k devices (large desktops, 1200px and up)*/
+/*4k devices (large desktops, 1200px and up)*
 @media (min-width: 1200px) {
   /*p {
     font-size: 1.1rem;
-  }*/
+  }*
 }
 
 @media (min-height: 650px) and (min-width: 571px) {
@@ -398,4 +399,45 @@ input {
   html {
     height: 100%;
   }
+}
+*/
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto Light", arial;
+}
+
+.page-content {
+  width: 100%;
+  display: flex;
+}
+
+.img-container {
+  width: 60%;
+  margin: 5% 2%;
+}
+
+.main-img {
+  object-fit: contain;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.bloom-logo {
+  max-width: 30%;
+  align-self:center;
+}
+
+.text-container {
+  width: 40%;
+  color: #407BBF;
+  margin-top: 4%;
+  margin-right:2%;
+  display:flex;
+  flex-direction:column;
+  padding-right: 5%
+}
+
+.main-title {
+  align-self: center;
 }
