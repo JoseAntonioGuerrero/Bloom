@@ -62,10 +62,10 @@
     if (footer) footer.style.transition = "0.3s"; 
     if (footer) footer.style.opacity = "0";
 
-    if (background) background.style.transition = "2s";
+    if (background) background.style.transition = "0.6s";
     if (background) background.style.opacity = "0";
 
-    if (backgroundMobile) backgroundMobile.style.transition = "2s";
+    if (backgroundMobile) backgroundMobile.style.transition = "1s";
     if (backgroundMobile) backgroundMobile.style.opacity = "0";
 
     setTimeout(() => {
