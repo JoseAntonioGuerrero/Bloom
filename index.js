@@ -1,5 +1,5 @@
 (function App() {
-  var urlBase = "https://bloom-b8cf9.firebaseapp.com/";
+  var urlBase = "http://127.0.0.1:5500/";
   var mobileMenu = document.querySelector("#menu-wrapper");
   var menuOpener = document.querySelector("#menu-mobile-icon");
   var menuCloser = document.querySelector("#menu-close");
