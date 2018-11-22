@@ -1,4 +1,4 @@
-* {
+/** {
   box-sizing: border-box;
   font-family: "Roboto Light", arial;
 }
@@ -25,7 +25,7 @@ html {
   height: 100%;
 }
 
-/***** { Header }******/
+/***** { Header }******
 .wrapper {
   display: -webkit-flex;
   display: -moz-box;
@@ -46,18 +46,18 @@ header #indicator {
   margin-right: 2px;  
 }
 
-/*main logo*/
+/*main logo*
 #header-logo {
   max-width: 250px;
 }
-/*Menu icon*/
+/*Menu icon*
 #menu-mobile-icon {
   margin-top: 15px;
   margin-bottom: 20px;
   max-width: 35px;
   cursor: pointer;
 }
-/*** {Menu Below} ***/
+/*** {Menu Below} ***
 #menu-wrapper {
   display: block;
   background: rgba(85, 89, 94, 0.97);
@@ -68,11 +68,11 @@ header #indicator {
   height: 100%;
   overflow: hidden;
   /*transition: 0.4s;*/
-  /*Change this to 0 to hide menu*/
+  /*Change this to 0 to hide menu*
   visibility: hidden;
   opacity: 0;
 }
-/*X to close menu*/
+/*X to close menu*
 #menu-close {
   position: relative;
   height: 21px;
@@ -86,7 +86,7 @@ header #indicator {
   z-index: 25;
 }
 /*Table system to center menu list*/
-/*For this is needed a display table and a display table cell*/
+/*For this is needed a display table and a display table cell*
 #menu-mobile {
   display: table;
   height: 100%;
@@ -121,7 +121,7 @@ a.menu-link {
   cursor: pointer;
 }
 /*********************/
-/**********{ Articles }*********/
+/**********{ Articles }*********
 .products1 {
   margin: 30px 5px 1px;
   display: grid;
@@ -138,7 +138,7 @@ a.menu-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*min-heigh avoids grid malformation before images load*/
+  /*min-heigh avoids grid malformation before images load*
   min-height: 200px;
   width: 45vw;
 }
@@ -159,12 +159,12 @@ a .card h2 {
   flex-flow: row wrap;
   justify-content: center;
   font-size: 2rem;
-  /*"font-weight:unset" to remove bold from h2*/
+  /*"font-weight:unset" to remove bold from h2*
   font-weight: unset;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
-/**********{ Footer }*********/
+/**********{ Footer }*********
 footer {
   background: rgb(91, 104, 112);
   display: -webkit-flex;
@@ -235,7 +235,7 @@ input {
 }
 /**************************/
 
-/*Small devices (landscape phones, 576px and up)*/
+/*Small devices (landscape phones, 576px and up)*
 @media (max-width: 768px) {
   a {
     height: 15vh;
@@ -255,13 +255,13 @@ input {
   }
 }
 
-/*Medium devices (tablets, 768px and up)*/
+/*Medium devices (tablets, 768px and up)*
 @media (min-width: 768px) {
-  /*Hide menu-mobile-icon*/
+  /*Hide menu-mobile-icon*
   #menu-mobile-icon {
     display: none;
   }
-  /*display menu *1 */
+  /*display menu *1 *
   #menu-wrapper {
     visibility: visible !important;
     opacity: 1 !important;
@@ -318,7 +318,7 @@ input {
   /******* *1 *********/
 }
 
-/*Large devices (desktops, 992px and up)*/
+/*Large devices (desktops, 992px and up)*
 @media (min-width: 992px) {
   .products1 {
     margin: 30px 5px 1px;
@@ -338,7 +338,7 @@ input {
   }
 }
 
-/*Extra large devices (large desktops, 1200px and up)*/
+/*Extra large devices (large desktops, 1200px and up)*
 @media (min-width: 1200px) {
 }
 
@@ -347,3 +347,5 @@ input {
     display: none;
   }
 }
+*/
+
