@@ -207,6 +207,9 @@ a.menu-link {
     right: unset;
     z-index: 0;
   }
+  .page{
+    padding-right: 20px;
+  }
   /******* *1 *********/
 }
 
