@@ -17,7 +17,7 @@
     <div id="page">
         <!-- ************************************ Header ************************************************-->
         <header class="wrapper">
-            <a id="link-home"><img id="header-logo" src="../../img/logo png bloom-01-01.png" alt="Alta logo"></a>
+            <a id="link-home"><img id="header-logo" src="../../img/logo png bloom-01-01.png" alt="bloom logo"></a>
             <img id="menu-mobile-icon" src="../../img/menu-icon.svg" alt="Open Menu">
             <div id="menu-wrapper">
                 <a id="menu-close"></a>

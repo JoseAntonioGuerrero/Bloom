@@ -162,9 +162,9 @@ h3 {
   }
 }
 @media (min-width: 1200px) {
-  .flexed-wrapper{
+  /* .flexed-wrapper{
     padding-top: 100px;
-  }
+  } */
 }
 @media (min-width: 1920px) {
   .flexed-wrapper{
