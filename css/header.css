@@ -4,7 +4,6 @@ header {
   justify-content: center;
   align-items: center;
   transition: 1s;
-  padding-left: 20px;
 }
 .not-home{
   margin-top: 30px;
@@ -112,6 +111,10 @@ a.menu-link {
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
+  header{
+  padding-left: 20px;
+
+  }
   /*Hide menu-mobile-icon*/
   .menu-mobile-icon {
     display: none;
