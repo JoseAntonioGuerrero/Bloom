@@ -29,6 +29,24 @@
 
   link1.addEventListener("click", () =>{
     closeMenu();
+    banishPage();
+    setTimeout(() => (window.location.href = './vision.html'), 1000);
+  });
+
+  link2.addEventListener("click", () =>{
+    closeMenu();
+    banishPage();
+    setTimeout(() => (window.location.href = './productos.html'), 1000);
+  });
+  
+  link3.addEventListener("click", () =>{
+    closeMenu();
+  });
+  
+  link4.addEventListener("click", () =>{
+    closeMenu();
+    banishPage();
+    setTimeout(() => (window.location.href = './contacto.html'), 1000);
   });
 
   //Open and close menu are only used on phone, or tablet vertical screen position.

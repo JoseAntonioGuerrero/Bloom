@@ -23,7 +23,7 @@
   link0.addEventListener("click", () =>{
     closeMenu();
     banishPage();
-    if(window.screen.availWidth > 767) translateHeaderDown();
+    translateHeaderDown();
     setTimeout(() => (window.location.href = './index.html'), 1000);
   });
 
@@ -34,21 +34,18 @@
   link2.addEventListener("click", () =>{
     closeMenu();
     banishPage();
-    if(window.screen.availWidth < 767) translateHeaderDown();
     setTimeout(() => (window.location.href = './productos.html'), 1000);
   });
   
   link3.addEventListener("click", () =>{
     closeMenu();
     banishPage();
-    if(window.screen.availWidth < 767) translateHeaderDown();
     setTimeout(() => (window.location.href = './aliados.html'), 1000);
   });
   
   link4.addEventListener("click", () =>{
     closeMenu();
     banishPage();
-    if(window.screen.availWidth < 767)  translateHeaderDown();
     setTimeout(() => (window.location.href = './contacto.html'), 1000);
   });
 
