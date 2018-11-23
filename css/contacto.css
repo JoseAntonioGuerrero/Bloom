@@ -149,6 +149,7 @@ h3 {
   .flexed-container{
     display:flex;
     margin: 35px 0;
+    height: 80vh;
   }
   .map{
     max-width: 500px;
@@ -224,12 +225,12 @@ h3 {
   .flexed-wrapper{
     padding-top: 100px;
   }
-}
-@media (min-width: 1920px) {
-  .flexed-wrapper{
-    padding-top: 200px;
-  }
 } */
+@media (min-width: 1920px) {
+  .flex{
+    margin-top: 200px;
+  }
+}
 
 @media (min-height: 531px) and (min-width: 571px) {
   /* body,
