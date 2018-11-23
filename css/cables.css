@@ -92,7 +92,7 @@ header #indicator {
   display: block;
 }
 
-ul#menu { 
+ul#menu {
   display: -webkit-flex;
   display: -moz-box;
   display: -ms-flexbox;
@@ -130,27 +130,16 @@ a {
   width: 80%;
 }
 
-.product-card {
-  flex: 1 0 0%;
-  display: flex;
-  margin-bottom: 50px;
+.detail-container1 > img {
+  width: 61px;
 }
 
-[class*="detail-container"] {
-  padding-top: 3vw;
+.detail-container2 > img {
+  width: 61px;
 }
 
-.detail-container1>img {
-  width: 8vw;
-}
-
-.detail-container2>img {
-  width: 8vw;
-}
-
-.color-container>img {
-  width: 1.92vw;
-  padding-top: 3vw;
+.color-container > img {
+  width: 19px;
 }
 
 .section-padding {
@@ -159,11 +148,11 @@ a {
 
 .product-img-container2 {
   display: flex;
-  max-width: 26.9vw;
-  max-height: 22vw;
+
+  max-height: 136px;
 }
 
-.product-img-container2>img {
+.product-img-container2 > img {
   position: relative;
   max-width: 100%;
   height: auto;
@@ -175,8 +164,10 @@ a {
 }
 
 .product-card {
+  width: 300px;
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 .bottom {
@@ -196,7 +187,8 @@ a {
 }
 
 .subtitle {
-  width: 330px;
+  width: 252px;
+  height: 23px;
   display: flex;
   justify-content: center;
   padding-top: 1vw;
@@ -265,7 +257,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;  
+  width: 100%;
   position: relative;
   min-height: 80px;
   height: auto;
@@ -284,5 +276,50 @@ footer {
   body,
   html {
     height: 100%;
+  }
+}
+@media (min-width: 620px) {
+  .product-img-container2 {
+    display: flex;
+    max-width: 26.9vw;
+    max-height: 22vw;
+  }
+  .color-container > img {
+    width: 1.92vw;
+    padding-top: 3vw;
+  }
+  .detail-container1 > img {
+    width: 8vw;
+  }
+
+  .detail-container2 > img {
+    width: 8vw;
+  }
+  .subtitle {
+    width: 330px;
+    display: flex;
+    justify-content: center;
+    padding-top: 1vw;
+    font-size: 16px;
+  }
+}
+@media (min-width: 750px) {
+  .product-card {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 1131px) {
+  .product-card {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+  }
+  .subtitle {
+    width: 330px;
+    display: flex;
+    justify-content: center;
+    height: 51px;
   }
 }
