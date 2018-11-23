@@ -87,7 +87,7 @@ header {
   position: relative;
   height: 21px;
   width: 21px;
-  margin: 30px auto 0 auto;
+  margin: 30px auto 0 30px;
   background: url(../img/x-close.png) center center no-repeat;
   background-size: 21px 21px;
   color: #fff;
@@ -132,6 +132,8 @@ a.menu-link {
   text-decoration: none;
   letter-spacing: 2px;
   cursor: pointer;
+  font-size: 28px;
+  padding: 20px 0 20px 0;
 }
 
 .btn-buy {

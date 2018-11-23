@@ -420,7 +420,7 @@ body, html{
 }
 
 header {
-  margin-top: 25px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -512,6 +512,7 @@ a.menu-link {
   display: flex;
   flex-direction: column;
   padding-top: 20px;
+  opacity: 0;
 }
 
 .img-container {
@@ -526,6 +527,7 @@ a.menu-link {
 .bloom-logo {
   max-width: 30%;
   align-self:center;
+  order: -1;
 }
 
 .text-container {
@@ -534,12 +536,20 @@ a.menu-link {
   margin-top: 4%;
   margin-right:2%;
   display:flex;
-  flex-direction:column;
-  padding-right: 5%
+  flex-direction: row;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.text-wrapper{
+  padding-left: 5%;
 }
 
 .main-title {
   align-self: center;
+  text-align: center;
+  padding-right: 60px;
+  padding-right: 60px;
 }
 
 
@@ -558,6 +568,7 @@ footer {
   width: 100%;
   height: auto;
   min-height: 110px;
+  opacity: 0;
 }
 
 .btn-white {
@@ -666,43 +677,36 @@ input {
   }
 
   /**** {page-content}****/
-
-  
-.page-content {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  padding-top: 0;
-}
+  .page-content {
+    flex-direction: row;
+  }
 
 .img-container {
   width: 60%;
   margin: 5% 2%;
 }
 
+.main-title {
+  padding-right: 0;
+}
+
 .main-img {
-  object-fit: contain;
   width: 90%;
   margin-left: 5%;
 }
 
-.bloom-logo {
-  max-width: 30%;
-  align-self:center;
-}
-
 .text-container {
   width: 40%;
-  color: #407BBF;
-  margin-top: 4%;
-  margin-right:2%;
-  display:flex;
-  flex-direction:column;
-  padding-right: 5%
+  flex-direction: column;
+  padding-left: 0;
 }
 
-.main-title {
-  align-self: center;
+.text-wrapper{
+  padding-left: 0;
+}
+
+.bloom-logo {
+  order: unset;
 }
 
   /***** {Footer} *****/
@@ -713,9 +717,8 @@ input {
   }
   .subscribe {
     position: absolute;
-    right: 10px;
+    right: 10px;  
     padding-bottom: 10px;
     margin-right: 5%;
   }
-
 }
