@@ -5,6 +5,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-family: "Roboto Light", arial;
+  color: rgb(64, 122, 189);
 }
 body {
   padding: 0;
@@ -14,29 +15,24 @@ body {
 .section-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  width: 80%;
-}
-
-.product-card {
-  flex: 1 0 0%;
-  display: flex;
   justify-content: center;
-  margin: 25px 0;
+  width: 80%;
 }
 
 .subtitle-container {
   display: flex;
   justify-content: center;
   padding-top: 1vw;
+  margin-top: -74px;
+  margin-bottom: 24px;
 }
 
-.detail-container>img {
-  width: 3.5vw;
+.detail-container > img {
+  width: 30px;
 }
 
-.color-container>img {
-  width: 1.92vw;
+.color-container > img {
+  width: 20px;
 }
 
 .section-padding {
@@ -45,14 +41,12 @@ body {
 
 .product-img-container {
   display: flex;
-  max-width: 26.9vw;
-  max-height: 17.1vw;
+  width: 150px;
 }
 
-.product-img-container>img {
+.product-img-container > img {
   position: relative;
-  max-width: 100%;
-  height: auto;
+  width: 236px;
   padding: 3vw;
   object-fit: contain;
   -webkit-transition: opacity 300ms ease-in-out;
@@ -71,4 +65,75 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.product-card {
+  margin: 1vw;
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+}
+.subtitle {
+  width: 214px;
+  height: 20px;
+  margin-top: 1vw;
+}
+
+@media (min-width: 1372px) {
+  .product-card {
+    margin: 1vw;
+    min-width: 460px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 768px) {
+  .subtitle {
+    width: 250px;
+    margin-top: 1vw;
+  }
+}
+@media (min-width: 672px) {
+  .product-card {
+    margin-bottom: 30px;
+  }
+  .product-img-container {
+    display: flex;
+    width: 200px;
+    max-height: 17.1vw;
+  }
+  .subtitle {
+    width: 250px;
+    margin-top: 1vw;
+  }
+  .detail-container > img {
+    width: 3.5vw;
+  }
+
+  .color-container > img {
+    width: 2.92vw;
+  }
+  .product-img-container {
+    display: flex;
+    max-width: 28.9vw;
+    max-height: 17.1vw;
+  }
+
+  .product-img-container > img {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    padding: 3vw;
+    object-fit: contain;
+    -webkit-transition: opacity 300ms ease-in-out;
+    -moz-transition: opacity 300ms ease-in-out;
+    -o-transition: opacity 300ms ease-in-out;
+    transition: opacity 300ms ease-in-out;
+  }
+  .subtitle-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 1vw;
+    margin: 0;
+  }
 }
