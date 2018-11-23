@@ -8,35 +8,36 @@
     <meta name="format-detection" content="telephone=no">
     <title>Bloom</title>
     <link rel="stylesheet" href="./css/contacto.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="shortcut icon" type="image/png" href="./img/ALTA icono web-02.png" />
 </head>
 
 <body>
     <div id="page">
         <!-- ************************************ Header ************************************************-->
-        <header class="wrapper">
-            <a id="link-home"><img id="header-logo" src="./img/logo png bloom-01-01.png" alt="Alta logo"></a>
-            <img id="menu-mobile-icon" src="./img/menu-icon.svg" alt="Open Menu">
-            <div id="menu-wrapper">
-                <a id="menu-close"></a>
-                <div id="menu-mobile">
-                    <div id="menu-container">
-                        <ul id="menu">
+        <header class="not-home">
+            <a><img class="header-logo" src="./img/logo png bloom-01-01.png" alt="Alta logo"></a>
+            <img class="menu-mobile-icon" src="./img/menu-icon.svg" alt="Open Menu">
+            <div class="menu-wrapper">
+                <a class="menu-close"></a>
+                <div class="menu-mobile">
+                    <div class="menu-container">
+                        <ul class="menu">
                             <li class="menu-item">
                                 <!-- Links are handled with script after animation occurs-->
-                                <a class="menu-link" id="link1">VISIÓN</a>
+                                <a class="menu-link link1">VISIÓN</a>
                             </li>
                             <li class="menu-item">
-                                <a class="menu-link" id="link2">PRODUCTOS</a>
+                                <a class="menu-link link2">PRODUCTOS</a>
                             </li>
                             <li class="menu-item">
-                                <a class="menu-link" id="link3">ALIADOS</a>
+                                <a class="menu-link link3">ALIADOS</a>
                             </li>
                             <li class="menu-item">
-                                <a class="menu-link" id="link4">CONTACTO</a>
-                                <div id="ind-container">
-                                    <div id="indicator"></div>
-                                </div>
+                                <a class="menu-link link4">CONTACTO</a>
+                                <!--Title underliner-->
+                                <div class="indicator"></div>
                             </li>
                         </ul>
                     </div>
@@ -49,7 +50,8 @@
             <section id="section1">
                 <div id="col1" class="col">
                     <article class="square-container" id="bigc">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d980.8002501130143!2d-66.8623615119644!3d10.484815318243049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDI5JzA1LjMiTiA2NsKwNTEnNDIuNSJX!5e0!3m2!1sen!2sve!4v1542048144777" width="600" height="450" frameborder="0" style="margin: 20px 0;" allowfullscreen></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d980.8002501130143!2d-66.8623615119644!3d10.484815318243049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDI5JzA1LjMiTiA2NsKwNTEnNDIuNSJX!5e0!3m2!1sen!2sve!4v1542048144777"
+                            width="600" height="450" frameborder="0" style="margin: 20px 0;" allowfullscreen></iframe>
                     </article>
                 </div>
                 <div id="col2" class="col">
@@ -96,7 +98,7 @@
             </article>
         </footer>
     </div>
-    <script src="./index.js"></script>
+    <script src="./contacto.js"></script>
 </body>
 
 </html>
