@@ -1,4 +1,4 @@
-* {
+/** {
   box-sizing: border-box;
   font-family: "Roboto Light", arial;
 }
@@ -25,7 +25,7 @@ html {
   height: 100%;
 }
 
-/***** { Header }******/
+/***** { Header }******
 .wrapper {
   display: -webkit-flex;
   display: -moz-box;
@@ -46,18 +46,18 @@ header #indicator {
   margin-right: 2px;  
 }
 
-/*main logo*/
+/*main logo*
 #header-logo {
   max-width: 250px;
 }
-/*Menu icon*/
+/*Menu icon*
 #menu-mobile-icon {
   margin-top: 15px;
   margin-bottom: 20px;
   max-width: 35px;
   cursor: pointer;
 }
-/*** {Menu Below} ***/
+/*** {Menu Below} ***
 #menu-wrapper {
   display: block;
   background: rgba(85, 89, 94, 0.97);
@@ -68,11 +68,11 @@ header #indicator {
   height: 100%;
   overflow: hidden;
   /*transition: 0.4s;*/
-  /*Change this to 0 to hide menu*/
+  /*Change this to 0 to hide menu*
   visibility: hidden;
   opacity: 0;
 }
-/*X to close menu*/
+/*X to close menu*
 #menu-close {
   position: relative;
   height: 21px;
@@ -86,7 +86,7 @@ header #indicator {
   z-index: 25;
 }
 /*Table system to center menu list*/
-/*For this is needed a display table and a display table cell*/
+/*For this is needed a display table and a display table cell*
 #menu-mobile {
   display: table;
   height: 100%;
@@ -121,7 +121,7 @@ a.menu-link {
   cursor: pointer;
 }
 /*********************/
-/**********{ Articles }*********/
+/**********{ Articles }*********
 .products1 {
   margin: 30px 5px 1px;
   display: grid;
@@ -138,7 +138,7 @@ a.menu-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*min-heigh avoids grid malformation before images load*/
+  /*min-heigh avoids grid malformation before images load*
   min-height: 200px;
   width: 45vw;
 }
@@ -159,12 +159,12 @@ a .card h2 {
   flex-flow: row wrap;
   justify-content: center;
   font-size: 2rem;
-  /*"font-weight:unset" to remove bold from h2*/
+  /*"font-weight:unset" to remove bold from h2*
   font-weight: unset;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
-/**********{ Footer }*********/
+/**********{ Footer }*********
 footer {
   background: rgb(91, 104, 112);
   display: -webkit-flex;
@@ -235,7 +235,7 @@ input {
 }
 /**************************/
 
-/*Small devices (landscape phones, 576px and up)*/
+/*Small devices (landscape phones, 576px and up)*
 @media (max-width: 768px) {
   a {
     height: 15vh;
@@ -255,13 +255,13 @@ input {
   }
 }
 
-/*Medium devices (tablets, 768px and up)*/
+/*Medium devices (tablets, 768px and up)*
 @media (min-width: 768px) {
-  /*Hide menu-mobile-icon*/
+  /*Hide menu-mobile-icon*
   #menu-mobile-icon {
     display: none;
   }
-  /*display menu *1 */
+  /*display menu *1 *
   #menu-wrapper {
     visibility: visible !important;
     opacity: 1 !important;
@@ -315,10 +315,10 @@ input {
     top: unset;
     right: unset;
   }
-  /******* *1 *********/
+  /******* *1 *********
 }
 
-/*Large devices (desktops, 992px and up)*/
+/*Large devices (desktops, 992px and up)*
 @media (min-width: 992px) {
   .products1 {
     margin: 30px 5px 1px;
@@ -338,12 +338,170 @@ input {
   }
 }
 
-/*Extra large devices (large desktops, 1200px and up)*/
+/*Extra large devices (large desktops, 1200px and up)*
 @media (min-width: 1200px) {
 }
 
 @media (max-width: 1200px) {
   img.bg {
     display: none;
+  }
+}
+*/
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto Light", arial;
+}
+
+.page-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.product-display {
+  width: 95%;
+  height: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10vh 0;
+}
+
+.product-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+img {
+  object-fit: contain;
+  width: 100%;
+  max-width: 500px;
+}
+
+.img-container {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prod-title-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+
+a {
+  width: 50%;
+  height: 35vh;
+  border: 1px rgba(0, 0, 0, 0.16) solid;
+  text-decoration:none;
+  color: #392D3B;
+}
+
+.img1 {
+  max-width: 12vw;
+}
+
+.img2 {
+  max-width: 14vw;
+}
+
+.img3 {
+  max-width: 22vw;
+}
+
+.img4 {
+  max-width: 15vw;
+}
+
+.carousel-container {
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.carousel-title {
+  font-weight: normal;
+}
+
+.carousel-item-img>img {
+  height: 135px;
+  object-fit: contain;
+}
+
+.swiper-container {
+  width: 70vw;
+  height: 45vh;
+}
+
+.swiper-slide {
+  display:flex;
+  flex-direction: column;
+  align-items: center !important;
+  height: 20vh;
+}
+
+.swiper-slide>a {
+  display:flex;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+@media only screen and (max-width: 890px) {
+  .img-container {
+    width: 50%;
+  }
+
+  .prod-title-container {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  a {
+    width: 100%;
+  }
+
+  .img1 {
+    max-width: 21vw;
+  }
+
+  .img2 {
+    max-width:21vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .product-title {
+    font-size: 16px;
+  }
+
+  .img1{
+    max-width: 65%;
+  }
+
+  .img2 {
+    max-width: 60%;
+  }
+
+  .img3 {
+    max-width: 70%;
+  }
+
+  .img4 {
+    max-width: 70%;
   }
 }
