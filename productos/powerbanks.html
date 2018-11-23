@@ -1,26 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Power Banks</title>
-    <link rel="stylesheet" href="../css/powerbanks.css" />
-    <link rel="shortcut icon" type="image/png" href="../img/favicon.png" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Power Banks</title>
+  <link rel="stylesheet" href="../css/powerbanks.css" />
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="shortcut icon" type="image/png" href="../img/favicon.png" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+  <div class="page">
+
+    <!-- ************************************ Header ************************************************-->
+    <header class="not-home">
+      <a><img class="header-logo" src="../img/logo png bloom-01-01.png" alt="Alta logo"></a>
+      <img class="menu-mobile-icon" src="../img/menu-icon.svg" alt="Open Menu">
+      <div class="menu-wrapper">
+        <a class="menu-close"></a>
+        <div class="menu-mobile">
+          <div class="menu-container">
+            <ul class="menu">
+              <li class="menu-item">
+                <!-- Links are handled with script after animation occurs-->
+                <a class="menu-link link1">VISIÓN</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link link2">PRODUCTOS</a>
+                <!--Title underliner-->
+                <div class="indicator"></div>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link link3">ALIADOS</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link link4">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
     <div class="page-content">
       <!-- <img class="bg" src=".../.../img/Image23.png" alt="background"> -->
-      <div id="page">
-        <!--
-          ************************************ Header ************************************************
-        -->
-
+      <div id="inner-page">
         <!--
           ************************************ Section 1 ************************************************
         -->
@@ -56,7 +83,30 @@
           ************************************* Footer **********************************************
         -->
       </div>
-      <script src="../index.js"></script>
     </div>
-  </body>
+    
+            <!-- ************* Footer ****************-->
+            <footer id="footer">
+                <div id="social-container">
+                    <article class="social">
+                        <a href="#"><img src="../img/Group36.png" alt="Facebook" class="social-img"></a>
+                        <a href="#"><img src="../img/Group38.png" alt="Instagram" class="social-img"></a>
+                        <a href="#"><img src="../img/Group40.png" alt="Twitter" class="social-img"></a>
+                    </article>
+                    <p class="footer-text">2018 KAIZEN WEB & DESIGN</p>
+                </div>
+                <article class="subscribe">
+                    <form action="./*">
+                        <label for="email"></label>
+                        <input type="email" placeholder="EMAIL" class="email">
+                        <button class="btn-white">
+                            <p class="btn-txt">SUSCRÍBETE</p>
+                        </button>
+                    </form>
+                </article>
+            </footer>
+  </div>
+  <script src="./inner-products.js"></script>
+</body>
+
 </html>
