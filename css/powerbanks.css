@@ -41,48 +41,35 @@ body {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  width: 90%;
-  justify-content: center;
-  margin-left: 10%;
+  flex-flow: row wrap;
+
+  width: 80%;
 }
-.sq1-new {
-  flex: 0 0 20%;
-  height: 100%;
-}
+
 .img-1 {
   height: 300px;
 }
-.sq2-new {
-  flex: 0 0 20%;
-  height: 100%;
-}
+
 .img-2 {
   height: 300px;
 }
-.sq3-new {
-  flex: 0 0 20%;
-  height: 100%;
-}
+
 .img-3 {
   height: 300px;
 }
-.sq4-new {
-  flex: 0 0 20%;
-  height: 100%;
-}
+
 .img-4 {
   height: 300px;
 }
 .div_tittle_down {
-  width: 20%;
-  margin: 5vw;
+  width: 200px;
+  margin-bottom: 20px;
 }
 .tittle_down {
   width: 100%;
 }
 .div_tittle_down_2 {
-  width: 50%;
-  margin-bottom:5%;
+  width: 61%;
 }
 
 .btn-white {
@@ -146,7 +133,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;  
+  width: 100%;
   position: relative;
   min-height: 80px;
   height: auto;
@@ -206,7 +193,7 @@ header #indicator {
 }
 ul#menu {
   padding: 0;
-  margin: 0;  
+  margin: 0;
   display: -webkit-flex;
   display: -moz-box;
   display: -ms-flexbox;
@@ -234,10 +221,31 @@ a.menu-link {
 a {
   cursor: pointer;
 }
-
+.row {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
 @media (min-height: 100px) and (min-width: 500px) {
   body,
   html {
     height: 100%;
+  }
+  @media (min-width: 608px) {
+    #section1-new {
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-flow: row nowrap;
+      width: 80%;
+    }
+    .div_tittle_down {
+      width: 20%;
+      margin: 5vw;
+    }
+    .div_tittle_down_2 {
+      width: 50%;
+    }
   }
 }
