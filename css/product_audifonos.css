@@ -51,25 +51,21 @@ body {
 }
 
 .subtitle {
-  width: 19.24vw;
+  width: 300px;
   object-fit: contain;
-  margin-left: 6.16vw;
-  margin-bottom: 30px;
 }
 
 .product-image {
-  width: 34.54vw;
+  width: 100%;
   object-fit: contain;
-  margin-bottom: 120px;
 }
-
-#right-product-image {
-  margin-bottom: 190px;
+.product-image2 {
+  width: 53%;
+  object-fit: contain;
 }
-
 .description {
-  width: 10.01vw;
-  object-fit:contain;
+  width: 106px;
+  object-fit: contain;
 }
 
 .product-card {
@@ -77,6 +73,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 400px;
 }
 
 /****************/
@@ -147,7 +144,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;  
+  width: 100%;
   position: relative;
   min-height: 80px;
   height: auto;
@@ -155,7 +152,7 @@ footer {
 }
 .subscribe {
   padding-right: 4%;
-  padding-top: 10px;  
+  padding-top: 10px;
   position: absolute;
   right: 10px;
   padding-bottom: 10px;
@@ -209,7 +206,7 @@ header #indicator {
 }
 ul#menu {
   padding: 0;
-  margin: 0; 
+  margin: 0;
   display: -webkit-flex;
   display: -moz-box;
   display: -ms-flexbox;
@@ -233,10 +230,21 @@ a.menu-link {
 a {
   cursor: pointer;
 }
+.flex-box {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+.flex-item {
+  width: 100%;
+}
 
-@media (min-height: 100px) and (min-width: 500px) {
-  body,
-  html {
-    height: 100%;
+@media (min-width: 887px) {
+  .flex-item {
+    width: 400px;
+  }
+  .flex-box {
+    justify-content: space-around;
+    width: 100vw;
   }
 }

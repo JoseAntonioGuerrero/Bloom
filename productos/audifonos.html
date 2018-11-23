@@ -1,95 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Audífonos</title>
-    <link rel="stylesheet" href="../css/product_audifonos.css">
+    <link rel="stylesheet" href="../css/product_audifonos.css" />
     <link rel="shortcut icon" type="image/png" href="../img/favicon.png" />
-    <link href="http://allfont.es/allfont.css?fonts=roboto-light" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- <img class="bg" src=".../.../img/Image23.png" alt="background"> -->
-    <div id="page">
-        <!-- ************************************ Header ************************************************-->
-        <header class="wrapper">
-            <a id="link-home"><img id="header-logo" src="../img/logo png bloom-01-01.png" alt="Alta logo"></a>
-            <img id="menu-mobile-icon" src="../img/menu-icon.svg" alt="Open Menu">
-            <div id="menu-wrapper">
-                <a id="menu-close"></a>
-                <div id="menu-mobile">
-                    <div id="menu-container">
-                        <ul id="menu">
-                            <li class="menu-item">
-                                <!-- Links are handled with script after animation occurs-->
-                                <a class="menu-link" id="link1">VISIÓN</a>
-                            </li>
-                            <li class="menu-item">
-                                <a class="menu-link" id="link2">PRODUCTOS</a>
-                                <!--Title underliner-->
-                                <div id="ind-container">
-                                    <div id="indicator"></div>
-                                </div>
-                            </li>
-                            <li class="menu-item">
-                                <a class="menu-link" id="link3">ALIADOS</a>
-                            </li>
-                            <li class="menu-item">
-                                <a class="menu-link" id="link4">CONTACTO</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- ************************************ Section 1 ************************************************-->
+    <div class="page-content">
+      <div id="page">
+        <!--
+          ************************************ Header ************************************************
+        -->
+
+        <!--
+          ************************************ Section 1 ************************************************
+        -->
         <div class="vanish">
-            <img class="tittle" src="../img/AUDIFONOS.png" />
+          <img class="tittle" src="../img/AUDIFONOS.png" />
         </div>
-        <section id="section1" class="section-container">
-            <div class="product-card">
-                <img src="../img/Group 136.png" alt="" class="product-image">
-                <div class="subtitle-container">
-                    <img src="../img/Group 138.png" alt="" class="subtitle">
-                </div>
+        <div class="flex-box">
+          <div class="flex-item">
+            <section id="section1" class="section-container">
+              <div class="product-card">
+                <img src="../img/Group 136.png" alt="" class="product-image" />
+              </div>
+              <div class="description-container">
+                <img src="../img/Group 147.png" alt="" class="description" />
+              </div>
+            </section>
+            <div class="subtitle-container">
+              <img src="../img/Group 138.png" alt="" class="subtitle" />
             </div>
-            <div class="description-container">
-                <img src="../img/Group 147.png" alt="" class="description">
+          </div>
+          <div class="flex-item">
+            <section id="section1" class="section-container">
+              <div class="product-card">
+                <img src="../img/Group 137.png" alt="" class="product-image2" />
+              </div>
+              <div class="description-container">
+                <img src="../img/Group 147.png" alt="" class="description" />
+              </div>
+            </section>
+            <div class="subtitle-container">
+              <img src="../img/Group 138.png" alt="" class="subtitle" />
             </div>
-            <div class="product-card">
-                <img id="right-product-image" src="../img/Group 137.png" alt="" class="product-image">
-            </div>
-        </section>
-
+          </div>
+        </div>
         <!-- <h2 id="section-title">DÓNDE UBICAR NUESTROS PRODUCTOS</h2> -->
-        <!-- ************************************* Footer **********************************************-->
-        <footer id="footer">
-            <div id="social-container">
-                <article class="social">
-                    <a href="#"><img src="../img/Group36.png" alt="Facebook" class="social-img"></a>
-                    <a href="#"><img src="../img/Group37.png" alt="Youtube" class="social-img"></a>
-                    <a href="#"><img src="../img/Group38.png" alt="Instagram" class="social-img"></a>
-                    <a href="#"><img src="../img/Group39.png" alt="Pinterest" class="social-img"></a>
-                    <a href="#"><img src="../img/Group40.png" alt="Twitter" class="social-img"></a>
-                </article>
-                <p class="footer-text">2018 KAIZEN WEB & DESIGN</p>
-            </div>
-            <article class="subscribe">
-                <form action="../*">
-                    <label for="email"></label>
-                    <input type="email" placeholder="EMAIL" class="email">
-                    <button class="btn-white">
-                        <p class="btn-txt">SUSCRÍBETE</p>
-                    </button>
-                </form>
-            </article>
-        </footer>
+        <!--
+          ************************************* Footer **********************************************
+        -->
+      </div>
+      <script src="../index.js"></script>
     </div>
-    <script src="../index.js"></script>
-</body>
-
+  </body>
 </html>
