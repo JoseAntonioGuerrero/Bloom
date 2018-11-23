@@ -49,13 +49,10 @@
         <div class="-page-content">
             <div>
                 <section>
-                    <div>
-                        <div>
+                    <div class="flexed-container">
+                        <div class="map-container">
                             <div class="texts-mobile">
-                                <h1>CONTÁCTANOS</h1>
-                                <p>
-                                    <strong>Las Mercedes, Caracas, Venezuela</strong><br />
-                                </p>
+                                <h1 class="title1">CONTÁCTANOS</h1>
                                 <p>
                                     Calle California con Mucuchies. Edif. Los Ángeles, torre A, piso 2, OF.A-5.<br />
                                 </p>
@@ -63,52 +60,46 @@
                                     El Grupo Alta, son un grupo de empresas pertenecientes al Holding de Kaizen.
                                 </p>
                             </div>
-                            <iframe
-                            class="map"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d980.8002501130143!2d-66.8623615119644!3d10.484815318243049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDI5JzA1LjMiTiA2NsKwNTEnNDIuNSJX!5e0!3m2!1sen!2sve!4v1542048144777"
-                            width="600"
-                            height="450" 
-                            frameborder="0" 
-                            style="margin: 20px 0;"
-                            allowfullscreen>
+                            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d980.8002501130143!2d-66.8623615119644!3d10.484815318243049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDI5JzA1LjMiTiA2NsKwNTEnNDIuNSJX!5e0!3m2!1sen!2sve!4v1542048144777"
+                                width="600" height="450" frameborder="0" style="margin: 20px 0;" allowfullscreen>
                             </iframe>
                         </div>
-                    </div>
-                    <div>
-                        <div>
-                            <h2>TELÉFONOS</h2>
-                            <p>+58 (212) 993 85 31</p>
-                            <p>+58 (212) 993 81 95</p>
-                        </div>
-                        <div>
-                            <h2>EMAIL</h2>
-                            <p>info@datacel.com.ve</p><br />
+                        <div class="flexed-wrapper">
+                            <h1 class="title2">CONTÁCTANOS</h1>
+                            <div class="card">
+                                <img class="icon" src="./img/phone.svg" alt="phone">
+                                <p>+58 (212) 993 85 31</p>
+                                <p>+58 (212) 993 81 95</p>
+                            </div>
+                            <div class="card">
+                                <img class="icon" src="./img/envelope.svg" alt="mail">
+                                <p>info@datacel.com.ve</p><br />
+                            </div>
                         </div>
                     </div>
                 </section>
             </div>
-            <!-- ********************************* Footer *********************************************-->
-            <footer class="footer">
-                <div class="social-container">
-                    <article class="social">
-                        <a href="#"><img src="./img/Group36.png" alt="Facebook" class="social-img"></a>
-                        <a href="#"><img src="./img/Group38.png" alt="Instagram" class="social-img"></a>
-                        <a href="#"><img src="./img/Group40.png" alt="Twitter" class="social-img"></a>
-                    </article>
-                    <p class="footer-text">2018 KAIZEN WEB & DESIGN</p>
-                </div>
-                <article class="subscribe">
-                    <form action="./*">
-                        <label for="email"></label>
-                        <input type="email" placeholder="EMAIL" class="email">
-                        <button class="btn-white">
-                            <p class="btn-txt">SUSCRÍBETE</p>
-                        </button>
-                    </form>
-                </article>
-            </footer>
         </div>
-
+        <!-- ********************************* Footer *********************************************-->
+        <footer class="footer">
+            <div class="social-container">
+                <article class="social">
+                    <a href="#"><img src="./img/Group36.png" alt="Facebook" class="social-img"></a>
+                    <a href="#"><img src="./img/Group38.png" alt="Instagram" class="social-img"></a>
+                    <a href="#"><img src="./img/Group40.png" alt="Twitter" class="social-img"></a>
+                </article>
+                <p class="footer-text">2018 KAIZEN WEB & DESIGN</p>
+            </div>
+            <article class="subscribe">
+                <form action="./*">
+                    <label for="email"></label>
+                    <input type="email" placeholder="EMAIL" class="email">
+                    <button class="btn-white">
+                        <p class="btn-txt">SUSCRÍBETE</p>
+                    </button>
+                </form>
+            </article>
+        </footer>
     </div>
     <script src="./contacto.js"></script>
 </body>
