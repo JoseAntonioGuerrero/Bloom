@@ -29,6 +29,8 @@
 
   link1.addEventListener("click", () =>{
     closeMenu();
+    banishPage();
+    setTimeout(() => (window.location.href = './vision.html'), 1000);
   });
 
   link2.addEventListener("click", () =>{
@@ -39,8 +41,6 @@
   
   link3.addEventListener("click", () =>{
     closeMenu();
-    banishPage();
-    setTimeout(() => (window.location.href = './aliados.html'), 1000);
   });
   
   link4.addEventListener("click", () =>{

@@ -29,6 +29,8 @@
 
   link1.addEventListener("click", () =>{
     closeMenu();
+    banishPage();
+    setTimeout(() => (window.location.href = './vision.html'), 1000);
   });
 
   link2.addEventListener("click", () =>{
@@ -45,8 +47,6 @@
   
   link4.addEventListener("click", () =>{
     closeMenu();
-    banishPage();
-    setTimeout(() => (window.location.href = './contacto.html'), 1000);
   });
 
   //Open and close menu are only used on phone, or tablet vertical screen position.
@@ -112,41 +112,6 @@
 
     if (backgroundMobile) backgroundMobile.style.transition = "0.6s";
     if (backgroundMobile) backgroundMobile.style.opacity = "1";
-  }
-  /*************************************/
-
-  /**
-   * This function provides(returns) a function attached to the given URL. When executed,
-   * makes the browser navigate to given URL after the timeout is over.. (use period)
-   *
-   * To assign specific transition behaviors, the param "home" is used.
-   * @access     private
-   *
-   * @param {string}   url           url to navigate.
-   * @param {boolean}   home         if true, the returned function moves the header upwards on the screen.
-   *                                  if False, disables upwards movement of header animation.
-   *                                  (You only want header to move upwards on home screen (Index.html))
-   * @param {int}   delay         Delay time to let action performs before launching url.
-   *
-   * @return {function} goToLinkFromHome or goToHome.
-   */
-  function linkHandler(url, home, delay) {
-    function goToLinkFromHome() {
-      closeMenu();
-      if (page.className == "page-home") {
-        translateHeaderUp();
-        banishPageContent();
-        setTimeout(() => (window.location.href = url), delay);
-      } else {
-        (window.location.href = url), delay;
-      }
-    }
-    function goToHome() {
-      banishPageContent();
-      translateHeaderDown();
-      setTimeout(() => (window.location.href = url), delay);
-    }
-    return home ? goToLinkFromHome : goToHome;
   }
 setTimeout(() => fadeInPage(),1);
 })();

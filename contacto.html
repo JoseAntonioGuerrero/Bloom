@@ -8,35 +8,37 @@
     <meta name="format-detection" content="telephone=no">
     <title>Bloom</title>
     <link rel="stylesheet" href="./css/contacto.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="shortcut icon" type="image/png" href="./img/ALTA icono web-02.png" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
 <body>
-    <div id="page">
+    <div class="page">  
         <!-- ************************************ Header ************************************************-->
-        <header class="wrapper">
-            <a id="link-home"><img id="header-logo" src="./img/logo png bloom-01-01.png" alt="Alta logo"></a>
-            <img id="menu-mobile-icon" src="./img/menu-icon.svg" alt="Open Menu">
-            <div id="menu-wrapper">
-                <a id="menu-close"></a>
-                <div id="menu-mobile">
-                    <div id="menu-container">
-                        <ul id="menu">
+        <header class="not-home">
+            <a><img class="header-logo" src="./img/logo png bloom-01-01.png" alt="Alta logo"></a>
+            <img class="menu-mobile-icon" src="./img/menu-icon.svg" alt="Open Menu">
+            <div class="menu-wrapper">
+                <a class="menu-close"></a>
+                <div class="menu-mobile">
+                    <div class="menu-container">
+                        <ul class="menu">
                             <li class="menu-item">
                                 <!-- Links are handled with script after animation occurs-->
-                                <a class="menu-link" id="link1">VISIÓN</a>
+                                <a class="menu-link link1">VISIÓN</a>
                             </li>
                             <li class="menu-item">
-                                <a class="menu-link" id="link2">PRODUCTOS</a>
+                                <a class="menu-link link2">PRODUCTOS</a>
                             </li>
                             <li class="menu-item">
-                                <a class="menu-link" id="link3">ALIADOS</a>
+                                <a class="menu-link link3">ALIADOS</a>
                             </li>
                             <li class="menu-item">
-                                <a class="menu-link" id="link4">CONTACTO</a>
-                                <div id="ind-container">
-                                    <div id="indicator"></div>
-                                </div>
+                                <a class="menu-link link4">CONTACTO</a>
+                                <!--Title underliner-->
+                                <div class="indicator"></div>
                             </li>
                         </ul>
                     </div>
@@ -44,59 +46,64 @@
             </div>
         </header>
         <!-- ************************************ Section 1 ************************************************-->
-        <!-- this section contains cards of products-->
-        <div id="secion1-container">
-            <section id="section1">
-                <div id="col1" class="col">
-                    <article class="square-container" id="bigc">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d980.8002501130143!2d-66.8623615119644!3d10.484815318243049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDI5JzA1LjMiTiA2NsKwNTEnNDIuNSJX!5e0!3m2!1sen!2sve!4v1542048144777" width="600" height="450" frameborder="0" style="margin: 20px 0;" allowfullscreen></iframe>
-                    </article>
-                </div>
-                <div id="col2" class="col">
-                    <h1 id="big-square-container-title">CONTÁCTANOS</h1>
-                    <p id="big-square-container-txt2">
-                        <strong>Las Mercedes, Caracas, Venezuela</strong><br />
-                    </p>
-                    <p id="big-square-container-txt2">
-                        Calle California con Mucuchies. Edif. Los Ángeles, torre A, piso 2, OF.A-5.<br />
-                    </p>
-                    <p id="big-square-container-txt2">
-                        El Grupo Alta, son un grupo de empresas pertenecientes al Holding de Kaizen.
-                    </p>
-                    <article class="square-container small">
-                        <h2 class="small-square-title">TELÉFONOS</h2>
-                        <p class="small-square-text">+58 (212) 993 85 31</p>
-                        <p class="small-square-text" id="last-txt-on-small-square">+58 (212) 993 81 95</p>
-                    </article>
-                    <article class="square-container small">
-                        <h2 class="small-square-title">EMAIL</h2>
-                        <p class="small-square-text">info@datacel.com.ve</p><br />
-                    </article>
-                </div>
-            </section>
-        </div>
-        <!-- ************************************ Footer ****************************************************-->
-        <footer id="footer">
-            <div id="social-container">
-                <article class="social">
-                    <a href="#"><img src="./img/Group36.png" alt="Facebook" class="social-img"></a>
-                    <a href="#"><img src="./img/Group38.png" alt="Instagram" class="social-img"></a>
-                    <a href="#"><img src="./img/Group40.png" alt="Twitter" class="social-img"></a>
-                </article>
-                <p class="footer-text">2018 KAIZEN WEB & DESIGN</p>
+        <div class="-page-content">
+            <div>
+                <section>
+                    <div>
+                        <div>
+                            <div class="texts-mobile">
+                                    <h1>CONTÁCTANOS</h1>
+                                    <p>
+                                        <strong>Las Mercedes, Caracas, Venezuela</strong><br />
+                                    </p>
+                                    <p>
+                                        Calle California con Mucuchies. Edif. Los Ángeles, torre A, piso 2, OF.A-5.<br />
+                                    </p>
+                                    <p>
+                                        El Grupo Alta, son un grupo de empresas pertenecientes al Holding de Kaizen.
+                                    </p>
+                            </div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d980.8002501130143!2d-66.8623615119644!3d10.484815318243049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDI5JzA1LjMiTiA2NsKwNTEnNDIuNSJX!5e0!3m2!1sen!2sve!4v1542048144777"
+                                width="600" height="450" frameborder="0" style="margin: 20px 0;" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h2>TELÉFONOS</h2>
+                            <p>+58 (212) 993 85 31</p>
+                            <p>+58 (212) 993 81 95</p>
+                        </div>
+                        <div>
+                            <h2>EMAIL</h2>
+                            <p>info@datacel.com.ve</p><br />
+                        </div>
+                    </div>
+                </section>
             </div>
-            <article class="subscribe">
-                <form action="./*">
-                    <label for="email"></label>
-                    <input type="email" placeholder="EMAIL" class="email">
-                    <button class="btn-white">
-                        <p class="btn-txt">SUSCRÍBETE</p>
-                    </button>
-                </form>
-            </article>
-        </footer>
+            <!-- ********************************* Footer *********************************************-->
+            <footer class="footer">
+                <div class="social-container">
+                    <article class="social">
+                        <a href="#"><img src="./img/Group36.png" alt="Facebook" class="social-img"></a>
+                        <a href="#"><img src="./img/Group38.png" alt="Instagram" class="social-img"></a>
+                        <a href="#"><img src="./img/Group40.png" alt="Twitter" class="social-img"></a>
+                    </article>
+                    <p class="footer-text">2018 KAIZEN WEB & DESIGN</p>
+                </div>
+                <article class="subscribe">
+                    <form action="./*">
+                        <label for="email"></label>
+                        <input type="email" placeholder="EMAIL" class="email">
+                        <button class="btn-white">
+                            <p class="btn-txt">SUSCRÍBETE</p>
+                        </button>
+                    </form>
+                </article>
+            </footer>
+        </div>
+
     </div>
-    <script src="./index.js"></script>
+    <script src="./contacto.js"></script>
 </body>
 
 </html>
