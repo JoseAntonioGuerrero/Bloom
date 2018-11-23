@@ -4,9 +4,14 @@ header {
   justify-content: center;
   align-items: center;
   transition: 1s;
+  padding-left: 20px;
 }
 .not-home{
   margin-top: 30px;
+  padding-left: 0;
+}
+header .indicator {
+display: none;
 }
 /*main logo*/
 .header-logo {
@@ -149,5 +154,12 @@ a.menu-link {
     letter-spacing: 2px;
     border: none;
     font-weight: bold;
+  }
+  header .indicator {
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    width: 60%;
+    background: rgb(64, 122, 189);
   }
 }
