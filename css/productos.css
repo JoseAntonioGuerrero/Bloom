@@ -3,13 +3,13 @@
   font-family: "Roboto Light", arial;
 }
 
-body,html{
+body,html {
   margin: 0;
 }
 
 ::-webkit-scrollbar {
   display: none;
-  }
+}
 
 .page {
   position: relative;
@@ -66,7 +66,7 @@ img {
   width: 40%;
 }
 
-.page-content a {
+a.product-link {
   width: 50%;
   height: 35vh;
   border: 1px rgba(0, 0, 0, 0.16) solid;
@@ -138,8 +138,18 @@ img {
 }
 
 @media only screen and (max-width: 720px) {
-  a {
-    width: 100%;
+  a.product-link {
+    width: 100% !important;
+  }
+
+  .product-display {
+    height: auto;
+  }
+
+  @-moz-document url-prefix() {
+    .swiper-container {
+      height: 51vh;
+    }
   }
 
   .img1 {
