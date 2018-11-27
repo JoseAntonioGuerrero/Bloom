@@ -20,6 +20,9 @@
   menuOpener.addEventListener("click", openMenu);
   menuCloser.addEventListener("click", closeMenu);
 
+  let spinner = document.querySelector('.spinner');
+  let img = document.querySelector('.img1');
+
   link1.addEventListener("click", () =>{
     closeMenu();
     banishPage();
@@ -147,5 +150,12 @@
     }
     return home ? goToLinkFromHome : goToHome;
   }
-setTimeout(() => fadeInPage(),1);
+background.onload = () => {
+   spinner.style.display = 'none';
+   setTimeout(() => fadeInPage(),1);
+}
+backgroundMobile.onload = () => {
+  spinner.style.display = 'none';
+  setTimeout(() => fadeInPage(),1);
+}
 })();
