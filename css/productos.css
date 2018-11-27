@@ -100,6 +100,8 @@ a.product-link {
 
 .carousel-title {
   font-weight: normal;
+  margin-bottom:10vh;
+  font-size: 36px;
 }
 
 .carousel-item-img>img {
@@ -109,7 +111,7 @@ a.product-link {
 
 .swiper-container {
   width: 70vw;
-  height: 45vh;
+  height: 38vh;
 }
 
 .swiper-slide {
@@ -125,6 +127,16 @@ a.product-link {
   justify-content: center;
   align-items: center;
   height: auto;
+  font-size: 12px;
+  color: black;
+}
+
+.swiper-slide>a:visited {
+  color: black;
+}
+
+.swiper-slide>h3 {
+  font-size: 16px !important;
 }
 
 @media only screen and (max-width: 890px) {
