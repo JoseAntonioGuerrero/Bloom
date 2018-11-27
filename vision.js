@@ -17,6 +17,8 @@
   var link3 = document.querySelector(".link3");
   var link4 = document.querySelector(".link4");
 
+  var changingLogo = document.querySelector(".bloom-logo");
+
   menuOpener.addEventListener("click", openMenu);
   menuCloser.addEventListener("click", closeMenu);
 

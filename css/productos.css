@@ -29,6 +29,10 @@ body,html {
   flex-wrap: wrap;
 }
 
+.shop-button {
+  display: none !important;
+}
+
 .product-display {
   width: 95%;
   height: 40%;
@@ -111,7 +115,7 @@ a.product-link {
 
 .swiper-container {
   width: 70vw;
-  height: 38vh;
+  height: 33vh;
 }
 
 .swiper-slide {

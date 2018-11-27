@@ -65,6 +65,14 @@ body, html{
   padding-right: 60px;
 }
 
+.bloom-logo {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.text-block-separator {
+  display: none;
+}
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
@@ -106,5 +114,24 @@ body, html{
 
   .bloom-logo {
     order: unset;
+  }
+
+  .bloom-logo img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .text-block-separator {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 362px) {
+  .text-block {
+    font-size: 16px;
+  }
+
+  .subtitle {
+    font-size: 17px;
   }
 }
