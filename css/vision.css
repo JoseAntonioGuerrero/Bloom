@@ -62,8 +62,9 @@ body, html{
 .main-title {
   align-self: center;
   text-align: center;
-  padding-right: 60px;
-  padding-right: 60px;
+  /* padding-right: 60px; */
+  /* padding-right: 60px; */
+  font-family: "Phenomena";
 }
 
 .bloom-logo {
@@ -131,6 +132,7 @@ body, html{
 @media only screen and (max-width: 362px) {
   .text-block {
     font-size: 16px;
+    margin-bottom: 0;
   }
 
   .subtitle {

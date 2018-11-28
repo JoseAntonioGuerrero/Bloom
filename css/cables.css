@@ -11,6 +11,9 @@ body {
   margin: 0;
 }
 
+h1{
+  font-family: 'Phenomena';
+}
 /**********************/
 #inner-page {
   padding-top: 30px;
@@ -177,9 +180,9 @@ a {
 }
 @media (min-width: 1131px) {
   .product-card {
-    width: 400px;
+    width: 40%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
   .subtitle {
     width: 330px;

@@ -10,6 +10,9 @@ body {
   padding: 0;
   margin: 0;
 }
+h1{
+  font-family: 'Phenomena';
+}
 /**********************/
 .page {
   position: relative;
@@ -79,6 +82,9 @@ body {
 .subtitle {
   width: 40%;
   padding-left: 2%;
+}
+.subtitle-container{
+  text-align: center;
 }
 
 .joined-image-container {

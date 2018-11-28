@@ -12,6 +12,10 @@ body {
   margin: 0;
 }
 
+h1{
+  font-family: 'Phenomena';
+}
+
 .tittle {
   margin: 5vh 0;
   max-width: 60vw;

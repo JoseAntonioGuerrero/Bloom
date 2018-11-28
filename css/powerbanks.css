@@ -11,6 +11,10 @@ body {
   margin: 0;
 }
 
+h1{
+  font-family: 'Phenomena';
+}
+
 .page-content {
   margin-bottom: 4%;
 }
@@ -142,6 +146,19 @@ a {
 
 .swiper-slide>h3 {
   font-size: 16px !important;
+}
+
+.swiper-button-next{
+  right: 0 !important;
+}
+.swiper-button-prev{
+  left: 0px !important;
+}
+.swiper-pagination{
+  bottom: 0px !important;
+}
+.swiper-container{
+  z-index: 0 !important;
 }
 
 @media (min-height: 100px) and (min-width: 500px) {

@@ -2,7 +2,12 @@
   box-sizing: border-box;
   font-family: "Roboto Light", arial;
 }
-
+.product-title{
+  font-family: 'Phenomena';
+}
+h3{
+  font-family: 'Phenomena';
+}
 body,html {
   margin: 0;
 }
@@ -142,6 +147,22 @@ a.product-link {
 .swiper-slide>h3 {
   font-size: 16px !important;
 }
+.swiper-button-next{
+  right: 0 !important;
+}
+.swiper-button-prev{
+  left: 0px !important;
+}
+.swiper-pagination{
+  bottom: 0px !important;
+}
+.swiper-container{
+  z-index: 0 !important;
+}
+
+h1{
+  font-family: 'Phenomena';
+}
 
 @media only screen and (max-width: 890px) {
   .img-container {
@@ -183,11 +204,15 @@ a.product-link {
   .img4 {
     max-width: 24vw;
   }
+  .carousel-title{
+    font-size: 26px;
+  }
 }
 
 @media only screen and (max-width: 400px) {
   .product-title {
     font-size: 16px;
+  font-family: 'Phenomena';
   }
 
   .img1{

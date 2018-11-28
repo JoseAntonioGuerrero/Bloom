@@ -117,6 +117,10 @@ h3 {
   background: rgb(91, 104, 112);
 }
 
+h1{
+  margin-top: 0;
+  font-family: 'Phenomena';
+}
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 553px) {

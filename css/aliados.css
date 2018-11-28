@@ -52,13 +52,15 @@ div.flexed-wrapper {
   margin: 20px 0;
 }
 /*Texts*/
-h2 {
+h1 {
   color: rgb(64, 122, 189);
   text-align: center;
   letter-spacing: 3px;
+  font-size: 32px;
 }
 .break-mobile{
   display: block;
+  font-family: 'Phenomena';
 }
 h3 {
   color: white;
@@ -102,6 +104,10 @@ img.nofilter{
   max-width: 308px;
 }
 
+h1{
+  font-family: 'Phenomena';
+}
+
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 553px) {
   /*body,
@@ -140,6 +146,7 @@ img.nofilter{
 
   .break-mobile {
     display: unset;
+    font-family: 'Phenomena';
   }
   .hero{
     height: 80vh;
@@ -152,7 +159,7 @@ img.nofilter{
     width: 100%;
     margin: 20px 0;
   }
-  h2{
+  h1{
   margin-bottom: 60px;
   }
 /*   
